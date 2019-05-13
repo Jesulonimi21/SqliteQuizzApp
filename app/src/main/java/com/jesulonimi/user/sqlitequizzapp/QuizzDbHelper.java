@@ -84,11 +84,11 @@ public class QuizzDbHelper extends SQLiteOpenHelper {
         db.setForeignKeyConstraintsEnabled(true);
     }
     public void fillCategoriesTable(){
-        Category category=new Category("Programming");
+        Category category=new Category("Lonimi's Life");
         addCategory(category);
-        Category category1=new Category("Geography");
+        Category category1=new Category("Lonimi's Career");
         addCategory(category1);
-        Category category2=new Category("Math");
+        Category category2=new Category("Lonimi's books");
         addCategory(category2);
 
     }
@@ -100,17 +100,56 @@ public class QuizzDbHelper extends SQLiteOpenHelper {
         }
     private void fillQuestions(){
         Log.d("calledDatabase","fillQuestions");
-        Question question1=new Question("Programming easy :A is correct","A","B","C",1,
+        Question question1=new Question("Which month was Lonimi born","June","may","february",3,
                 Question.DIFFICULTY_EASY,Category.PROGRAMMING);
         addQuestion(question1);
+        Question question12=new Question("Which year was Lonimi born","1999","1998","2000",1,
+                Question.DIFFICULTY_EASY,Category.PROGRAMMING);
+        addQuestion(question12);
+        Question question13=new Question("What is the age range Lonimi plans to get married","25 to 26 years old","27 to 28 years old","29 to 30 years old",1,
+                Question.DIFFICULTY_EASY,Category.PROGRAMMING);
+        addQuestion(question13);
+        Question question14=new Question("What is Lonimi's best food","Rice","Yam","any food i eat when am hungry",3,
+                Question.DIFFICULTY_EASY,Category.PROGRAMMING);
+        addQuestion(question14);
+        Question question15=new Question("Who is Lonimi's best scientist","Isaac Newton","Albert Einstein","Blaise Pascal",2,
+                Question.DIFFICULTY_EASY,Category.PROGRAMMING);
+        addQuestion(question15);
 
-        Question question2=new Question("Geography easy :A is correct","A","B","C",1,
+        Question question2=new Question("Which department is Lonimi","Computer Science","BioChemistry","Chemistry",1,
                 Question.DIFFICULTY_EASY,Category.GEOGRAPHY);
         addQuestion(question2);
+        Question question22=new Question("Which subject did Lonimi pass once and fail every other time through out his secondary school days ","Chemistry","Technical Drawing","Math",2,
+                Question.DIFFICULTY_EASY,Category.GEOGRAPHY);
+        addQuestion(question22);
 
-        Question question3=new Question("Math medium :A is correct","A","B","C",1,
-                Question.DIFFICULTY_MEDIUM,Category.MATH);
+        Question question23=new Question("Which was Lonimi's best subject in secondary school","Chemistry","Technical Drawing","Lonimi had no best subject and hated all subjects",3,
+                Question.DIFFICULTY_EASY,Category.GEOGRAPHY);
+        addQuestion(question23);
+        Question question24=new Question("What is Lonimis belief about learning","Anything can be learnt by anyone, it just requires continous effort","Education is not for everyone, we all have different talents","Learning is the solely dependent on the students ability to learn",1,
+                Question.DIFFICULTY_EASY,Category.GEOGRAPHY);
+        addQuestion(question24);
+
+        Question question25=new Question("Given the chance to start university over again, which course will Lonimi Study","Computer Science","History","Physics",2,
+                Question.DIFFICULTY_EASY,Category.GEOGRAPHY);
+        addQuestion(question25);
+
+        Question question3=new Question("What is Lonimi's best book of all time","Harry Potter","Percy Jackson","Nobody's child",3,
+                Question.DIFFICULTY_EASY,Category.MATH);
         addQuestion(question3);
+        Question question31=new Question("What was the genre of Lonimis best book","Adventure","Magic","Romance",1,
+                Question.DIFFICULTY_EASY,Category.MATH);
+        addQuestion(question31);
+
+        Question question32=new Question("At what range of age did Lonimi read this particular book","8-9 years","10-11","12-13",2,
+                Question.DIFFICULTY_EASY,Category.MATH);
+        addQuestion(question32);
+        Question question33=new Question("What are the kind of novels Lonimi reads now adays","Spiritual","Academic","Magic",1,
+                Question.DIFFICULTY_EASY,Category.MATH);
+        addQuestion(question33);
+        Question question34=new Question("If given the chance, what genre of books will Lonimi read","Spiritual","Academic","Magic",1,
+                Question.DIFFICULTY_EASY,Category.MATH);
+        addQuestion(question34);
 
         Question question4=new Question("Programming medium :A is correct","A","B","C",1,
                 Question.DIFFICULTY_MEDIUM,Category.PROGRAMMING);
